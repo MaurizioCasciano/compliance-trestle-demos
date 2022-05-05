@@ -101,7 +101,7 @@ def run(input_xls: pathlib.Path, output_directory: pathlib.Path, cis_version: st
             'title': f'CIS Controls version {cis_version} catalog.',
             'last-modified': datetime.datetime.now().astimezone(),
             'version': cis_version,
-            'oscal-version': '1.0.0'
+            'oscal-version': '1.0.2'
         }
     )
 
@@ -115,7 +115,7 @@ def run(input_xls: pathlib.Path, output_directory: pathlib.Path, cis_version: st
             **{
                 'title': 'CIS Implementation Group 1',
                 'version': cis_version,
-                'oscal-version': '1.0.0milestone3',
+                'oscal-version': '1.0.2',
                 'last-modified': datetime.datetime.now().astimezone()
             }
         ),
