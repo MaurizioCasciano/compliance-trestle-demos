@@ -44,3 +44,5 @@ site
 /.pytest_cache/
 
 .idea/
+
+*.xlsx#
