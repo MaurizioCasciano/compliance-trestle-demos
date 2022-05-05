@@ -42,3 +42,5 @@ cov_html
 
 site
 /.pytest_cache/
+
+.idea/
