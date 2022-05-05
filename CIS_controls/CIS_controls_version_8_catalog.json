@@ -1,0 +1,1912 @@
+{
+  "catalog": {
+    "uuid": "2330d05a-04f3-4b7b-a838-3cfa5ab81484",
+    "metadata": {
+      "title": "CIS Controls version 8 catalog.",
+      "last-modified": "2022-05-05T12:08:09.737952+02:00",
+      "version": "8",
+      "oscal-version": "1.0.2"
+    },
+    "controls": [
+      {
+        "id": "control-1",
+        "title": "Inventory and Control of Enterprise Assets",
+        "parts": [
+          {
+            "name": "Description",
+            "prose": "Actively manage (inventory, track, and correct) all software (operating systems and applications) on the network so that only authorized software is installed and can execute, and that unauthorized and unmanaged software is found and prevented from installation or execution."
+          }
+        ],
+        "controls": [
+          {
+            "id": "control-1.1",
+            "class": "Devices",
+            "title": "Establish and Maintain Detailed Enterprise Asset Inventory",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Establish and maintain an accurate, detailed, and up-to-date inventory of all enterprise assets with the potential to store or process data, to include: end-user devices (including portable and mobile), network devices, non-computing/IoT devices, and servers. Ensure the inventory records the network address (if static), hardware address, machine name, enterprise asset owner, department for each asset, and whether the asset has been approved to connect to the network. For mobile end-user devices, MDM type tools can support this process, where appropriate. This inventory includes assets connected to the infrastructure physically, virtually, remotely, and those within cloud environments. Additionally, it includes assets that are regularly connected to the enterprise’s network infrastructure, even if they are not under control of the enterprise. Review and update the inventory of all enterprise assets bi-annually, or more frequently."
+              }
+            ]
+          },
+          {
+            "id": "control-1.2",
+            "class": "Devices",
+            "title": "Address Unauthorized Assets",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Ensure that a process exists to address unauthorized assets on a weekly basis. The enterprise may choose to remove the asset from the network, deny the asset from connecting remotely to the network, or quarantine the asset."
+              }
+            ]
+          },
+          {
+            "id": "control-1.3",
+            "class": "Devices",
+            "title": "Utilize an Active Discovery Tool",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Utilize an active discovery tool to identify assets connected to the enterprise’s network. Configure the active discovery tool to execute daily, or more frequently."
+              }
+            ]
+          },
+          {
+            "id": "control-1.4",
+            "class": "Devices",
+            "title": "Use Dynamic Host Configuration Protocol (DHCP) Logging to Update Enterprise Asset Inventory",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Use DHCP logging on all DHCP servers or Internet Protocol (IP) address management tools to update the enterprise’s asset inventory. Review and use logs to update the enterprise’s asset inventory weekly, or more frequently."
+              }
+            ]
+          },
+          {
+            "id": "control-1.5",
+            "class": "Devices",
+            "title": "Use a Passive Asset Discovery Tool",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Use a passive discovery tool to identify assets connected to the enterprise’s network. Review and use scans to update the enterprise’s asset inventory at least weekly, or more frequently."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "control-2",
+        "title": "Inventory and Control of Software Assets",
+        "parts": [
+          {
+            "name": "Description",
+            "prose": "Develop processes and technical controls to identify, classify, securely handle, retain, and dispose of data."
+          }
+        ],
+        "controls": [
+          {
+            "id": "control-2.1",
+            "class": "Applications",
+            "title": "Establish and Maintain a Software Inventory",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Establish and maintain a detailed inventory of all licensed software installed on enterprise assets. The software inventory must document the title, publisher, initial install/use date, and business purpose for each entry; where appropriate, include the Uniform Resource Locator (URL), app store(s), version(s), deployment mechanism, and decommission date. Review and update the software inventory bi-annually, or more frequently."
+              }
+            ]
+          },
+          {
+            "id": "control-2.2",
+            "class": "Applications",
+            "title": "Ensure Authorized Software is Currently Supported ",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Ensure that only currently supported software is designated as authorized in the software inventory for enterprise assets. If software is unsupported, yet necessary for the fulfillment of the enterprise’s mission, document an exception detailing mitigating controls and residual risk acceptance. For any unsupported software without an exception documentation, designate as unauthorized. Review the software list to verify software support at least monthly, or more frequently."
+              }
+            ]
+          },
+          {
+            "id": "control-2.3",
+            "class": "Applications",
+            "title": "Address Unauthorized Software",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Ensure that unauthorized software is either removed from use on enterprise assets or receives a documented exception. Review monthly, or more frequently."
+              }
+            ]
+          },
+          {
+            "id": "control-2.4",
+            "class": "Applications",
+            "title": "Utilize Automated Software Inventory Tools",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Utilize software inventory tools, when possible, throughout the enterprise to automate the discovery and documentation of installed software. "
+              }
+            ]
+          },
+          {
+            "id": "control-2.5",
+            "class": "Applications",
+            "title": "Allowlist Authorized Software",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Use technical controls, such as application allowlisting, to ensure that only authorized software can execute or be accessed. Reassess bi-annually, or more frequently."
+              }
+            ]
+          },
+          {
+            "id": "control-2.6",
+            "class": "Applications",
+            "title": "Allowlist Authorized Libraries",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": " Use technical controls to ensure that only authorized software libraries, such as specific .dll, .ocx, .so, etc., files, are allowed to load into a system process. Block unauthorized libraries from loading into a system process. Reassess bi-annually, or more frequently."
+              }
+            ]
+          },
+          {
+            "id": "control-2.7",
+            "class": "Applications",
+            "title": "Allowlist Authorized Scripts",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Use technical controls, such as digital signatures and version control, to ensure that only authorized scripts, such as specific .ps1, .py, etc., files, are allowed to execute. Block unauthorized scripts from executing. Reassess bi-annually, or more frequently."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "control-3",
+        "title": "Data Protection",
+        "parts": [
+          {
+            "name": "Description",
+            "prose": "Establish and maintain the secure configuration of enterprise assets (end-user devices, including portable and mobile; network devices; non-computing/IoT devices; and servers) and software (operating systems and applications)."
+          }
+        ],
+        "controls": [
+          {
+            "id": "control-3.1",
+            "class": "Data",
+            "title": "Establish and Maintain a Data Management Process",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Establish and maintain a data management process. In the process, address data sensitivity, data owner, handling of data, data retention limits, and disposal requirements, based on sensitivity and retention standards for the enterprise. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard."
+              }
+            ]
+          },
+          {
+            "id": "control-3.2",
+            "class": "Data",
+            "title": "Establish and Maintain a Data Inventory",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Establish and maintain a data inventory, based on the enterprise’s data management process. Inventory sensitive data, at a minimum. Review and update inventory annually, at a minimum, with a priority on sensitive data."
+              }
+            ]
+          },
+          {
+            "id": "control-3.3",
+            "class": "Data",
+            "title": "Configure Data Access Control Lists",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Configure data access control lists based on a user’s need to know. Apply data access control lists, also known as access permissions, to local and remote file systems, databases, and applications."
+              }
+            ]
+          },
+          {
+            "id": "control-3.4",
+            "class": "Data",
+            "title": "Enforce Data Retention",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Retain data according to the enterprise’s data management process. Data retention must include both minimum and maximum timelines."
+              }
+            ]
+          },
+          {
+            "id": "control-3.5",
+            "class": "Data",
+            "title": "Securely Dispose of Data",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Securely dispose of data as outlined in the enterprise’s data management process. Ensure the disposal process and method are commensurate with the data sensitivity."
+              }
+            ]
+          },
+          {
+            "id": "control-3.6",
+            "class": "Devices",
+            "title": "Encrypt Data on End-User Devices",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Encrypt data on end-user devices containing sensitive data. Example implementations can include: Windows BitLocker®, Apple FileVault®, Linux® dm-crypt."
+              }
+            ]
+          },
+          {
+            "id": "control-3.7",
+            "class": "Data",
+            "title": "Establish and Maintain a Data Classification Scheme",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Establish and maintain an overall data classification scheme for the enterprise. Enterprises may use labels, such as “Sensitive,” “Confidential,” and “Public,” and classify their data according to those labels. Review and update the classification scheme annually, or when significant enterprise changes occur that could impact this Safeguard."
+              }
+            ]
+          },
+          {
+            "id": "control-3.8",
+            "class": "Data",
+            "title": "Document Data Flows",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Document data flows. Data flow documentation includes service provider data flows and should be based on the enterprise’s data management process. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard."
+              }
+            ]
+          },
+          {
+            "id": "control-3.9",
+            "class": "Data",
+            "title": "Encrypt Data on Removable Media",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Encrypt data on removable media."
+              }
+            ]
+          },
+          {
+            "id": "control-3.1",
+            "class": "Data",
+            "title": "Encrypt Sensitive Data in Transit",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Encrypt sensitive data in transit. Example implementations can include: Transport Layer Security (TLS) and Open Secure Shell (OpenSSH)."
+              }
+            ]
+          },
+          {
+            "id": "control-3.11",
+            "class": "Data",
+            "title": "Encrypt Sensitive Data at Rest",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Encrypt sensitive data at rest on servers, applications, and databases containing sensitive data. Storage-layer encryption, also known as server-side encryption, meets the minimum requirement of this Safeguard. Additional encryption methods may include application-layer encryption, also known as client-side encryption, where access to the data storage device(s) does not permit access to the plain-text data. "
+              }
+            ]
+          },
+          {
+            "id": "control-3.12",
+            "class": "Network",
+            "title": "Segment Data Processing and Storage Based on Sensitivity",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Segment data processing and storage based on the sensitivity of the data. Do not process sensitive data on enterprise assets intended for lower sensitivity data."
+              }
+            ]
+          },
+          {
+            "id": "control-3.13",
+            "class": "Data",
+            "title": "Deploy a Data Loss Prevention Solution",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Implement an automated tool, such as a host-based Data Loss Prevention (DLP) tool to identify all sensitive data stored, processed, or transmitted through enterprise assets, including those located onsite or at a remote service provider, and update the enterprise's sensitive data inventory."
+              }
+            ]
+          },
+          {
+            "id": "control-3.14",
+            "class": "Data",
+            "title": "Log Sensitive Data Access",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Log sensitive data access, including modification and disposal. "
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "control-4",
+        "title": "Secure Configuration of Enterprise Assets and Software",
+        "parts": [
+          {
+            "name": "Description",
+            "prose": "Use processes and tools to assign and manage authorization to credentials for user accounts, including administrator accounts, as well as service accounts, to enterprise assets and software."
+          }
+        ],
+        "controls": [
+          {
+            "id": "control-4.1",
+            "class": "Applications",
+            "title": "Establish and Maintain a Secure Configuration Process",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Establish and maintain a secure configuration process for enterprise assets (end-user devices, including portable and mobile, non-computing/IoT devices, and servers) and software (operating systems and applications). Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard."
+              }
+            ]
+          },
+          {
+            "id": "control-4.2",
+            "class": "Network",
+            "title": "Establish and Maintain a Secure Configuration Process for Network Infrastructure",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Establish and maintain a secure configuration process for network devices. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard."
+              }
+            ]
+          },
+          {
+            "id": "control-4.3",
+            "class": "Users",
+            "title": "Configure Automatic Session Locking on Enterprise Assets",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Configure automatic session locking on enterprise assets after a defined period of inactivity. For general purpose operating systems, the period must not exceed 15 minutes. For mobile end-user devices, the period must not exceed 2 minutes."
+              }
+            ]
+          },
+          {
+            "id": "control-4.4",
+            "class": "Devices",
+            "title": "Implement and Manage a Firewall on Servers",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Implement and manage a firewall on servers, where supported. Example implementations include a virtual firewall, operating system firewall, or a third-party firewall agent."
+              }
+            ]
+          },
+          {
+            "id": "control-4.5",
+            "class": "Devices",
+            "title": "Implement and Manage a Firewall on End-User Devices",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Implement and manage a host-based firewall or port-filtering tool on end-user devices, with a default-deny rule that drops all traffic except those services and ports that are explicitly allowed."
+              }
+            ]
+          },
+          {
+            "id": "control-4.6",
+            "class": "Network",
+            "title": "Securely Manage Enterprise Assets and Software",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Securely manage enterprise assets and software. Example implementations include managing configuration through version-controlled-infrastructure-as-code and accessing administrative interfaces over secure network protocols, such as Secure Shell (SSH) and Hypertext Transfer Protocol Secure (HTTPS). Do not use insecure management protocols, such as Telnet (Teletype Network) and HTTP, unless operationally essential."
+              }
+            ]
+          },
+          {
+            "id": "control-4.7",
+            "class": "Users",
+            "title": "Manage Default Accounts on Enterprise Assets and Software",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Manage default accounts on enterprise assets and software, such as root, administrator, and other pre-configured vendor accounts. Example implementations can include: disabling default accounts or making them unusable."
+              }
+            ]
+          },
+          {
+            "id": "control-4.8",
+            "class": "Devices",
+            "title": "Uninstall or Disable Unnecessary Services on Enterprise Assets and Software",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Uninstall or disable unnecessary services on enterprise assets and software, such as an unused file sharing service, web application module, or service function."
+              }
+            ]
+          },
+          {
+            "id": "control-4.9",
+            "class": "Devices",
+            "title": "Configure Trusted DNS Servers on Enterprise Assets",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Configure trusted DNS servers on enterprise assets. Example implementations include: configuring assets to use enterprise-controlled DNS servers and/or reputable externally accessible DNS servers. "
+              }
+            ]
+          },
+          {
+            "id": "control-4.1",
+            "class": "Devices",
+            "title": "Enforce Automatic Device Lockout on Portable End-User Devices",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Enforce automatic device lockout following a predetermined threshold of local failed authentication attempts on portable end-user devices, where supported. For laptops, do not allow more than 20 failed authentication attempts; for tablets and smartphones, no more than 10 failed authentication attempts. Example implementations include Microsoft® InTune Device Lock and Apple® Configuration Profile maxFailedAttempts."
+              }
+            ]
+          },
+          {
+            "id": "control-4.11",
+            "class": "Devices",
+            "title": "Enforce Remote Wipe Capability on Portable End-User Devices",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Remotely wipe enterprise data from enterprise-owned portable end-user devices when deemed appropriate such as lost or stolen devices, or when an individual no longer supports the enterprise."
+              }
+            ]
+          },
+          {
+            "id": "control-4.12",
+            "class": "Devices",
+            "title": "Separate Enterprise Workspaces on Mobile End-User Devices",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Ensure separate enterprise workspaces are used on mobile end-user devices, where supported. Example implementations include using an Apple® Configuration Profile or Android™ Work Profile to separate enterprise applications and data from personal applications and data."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "control-5",
+        "title": "Account Management",
+        "parts": [
+          {
+            "name": "Description",
+            "prose": "Use processes and tools to create, assign, manage, and revoke access credentials and privileges for user, administrator, and service accounts for enterprise assets and software."
+          }
+        ],
+        "controls": [
+          {
+            "id": "control-5.1",
+            "class": "Users",
+            "title": "Establish and Maintain an Inventory of Accounts",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Establish and maintain an inventory of all accounts managed in the enterprise. The inventory must include both user and administrator accounts. The inventory, at a minimum, should contain the person’s name, username, start/stop dates, and department. Validate that all active accounts are authorized, on a recurring schedule at a minimum quarterly, or more frequently."
+              }
+            ]
+          },
+          {
+            "id": "control-5.2",
+            "class": "Users",
+            "title": "Use Unique Passwords",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Use unique passwords for all enterprise assets. Best practice implementation includes, at a minimum, an 8-character password for accounts using MFA and a 14-character password for accounts not using MFA. "
+              }
+            ]
+          },
+          {
+            "id": "control-5.3",
+            "class": "Users",
+            "title": "Disable Dormant Accounts",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Delete or disable any dormant accounts after a period of 45 days of inactivity, where supported."
+              }
+            ]
+          },
+          {
+            "id": "control-5.4",
+            "class": "Users",
+            "title": "Restrict Administrator Privileges to Dedicated Administrator Accounts",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Restrict administrator privileges to dedicated administrator accounts on enterprise assets. Conduct general computing activities, such as internet browsing, email, and productivity suite use, from the user’s primary, non-privileged account."
+              }
+            ]
+          },
+          {
+            "id": "control-5.5",
+            "class": "Users",
+            "title": "Establish and Maintain an Inventory of Service Accounts",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Establish and maintain an inventory of service accounts. The inventory, at a minimum, must contain department owner, review date, and purpose. Perform service account reviews to validate that all active accounts are authorized, on a recurring schedule at a minimum quarterly, or more frequently."
+              }
+            ]
+          },
+          {
+            "id": "control-5.6",
+            "class": "Users",
+            "title": "Centralize Account Management",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Centralize account management through a directory or identity service."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "control-6",
+        "title": "Access Control Management",
+        "parts": [
+          {
+            "name": "Description",
+            "prose": "Develop a plan to continuously assess and track vulnerabilities on all enterprise assets within the enterprise’s infrastructure, in order to remediate, and minimize, the window of opportunity for attackers. Monitor public and private industry sources for new threat and vulnerability information."
+          }
+        ],
+        "controls": [
+          {
+            "id": "control-6.1",
+            "class": "Users",
+            "title": "Establish an Access Granting Process",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Establish and follow a process, preferably automated, for granting access to enterprise assets upon new hire, rights grant, or role change of a user."
+              }
+            ]
+          },
+          {
+            "id": "control-6.2",
+            "class": "Users",
+            "title": "Establish an Access Revoking Process",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Establish and follow a process, preferably automated, for revoking access to enterprise assets, through disabling accounts immediately upon termination, rights revocation, or role change of a user. Disabling accounts, instead of deleting accounts, may be necessary to preserve audit trails."
+              }
+            ]
+          },
+          {
+            "id": "control-6.3",
+            "class": "Users",
+            "title": "Require MFA for Externally-Exposed Applications",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Require all externally-exposed enterprise or third-party applications to enforce MFA, where supported. Enforcing MFA through a directory service or SSO provider is a satisfactory implementation of this Safeguard."
+              }
+            ]
+          },
+          {
+            "id": "control-6.4",
+            "class": "Users",
+            "title": "Require MFA for Remote Network Access",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Require MFA for remote network access."
+              }
+            ]
+          },
+          {
+            "id": "control-6.5",
+            "class": "Users",
+            "title": "Require MFA for Administrative Access",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Require MFA for all administrative access accounts, where supported, on all enterprise assets, whether managed on-site or through a third-party provider."
+              }
+            ]
+          },
+          {
+            "id": "control-6.6",
+            "class": "Users",
+            "title": "Establish and Maintain an Inventory of Authentication and Authorization Systems",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Establish and maintain an inventory of the enterprise’s authentication and authorization systems, including those hosted on-site or at a remote service provider. Review and update the inventory, at a minimum, annually, or more frequently."
+              }
+            ]
+          },
+          {
+            "id": "control-6.7",
+            "class": "Users",
+            "title": "Centralize Access Control",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Centralize access control for all enterprise assets through a directory service or SSO provider, where supported."
+              }
+            ]
+          },
+          {
+            "id": "control-6.8",
+            "class": "Data",
+            "title": "Define and Maintain Role-Based Access Control",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Define and maintain role-based access control, through determining and documenting the access rights necessary for each role within the enterprise to successfully carry out its assigned duties. Perform access control reviews of enterprise assets to validate that all privileges are authorized, on a recurring schedule at a minimum annually, or more frequently."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "control-7",
+        "title": "Continuous Vulnerability Management",
+        "parts": [
+          {
+            "name": "Description",
+            "prose": "Collect, alert, review, and retain audit logs of events that could help detect, understand, or recover from an attack."
+          }
+        ],
+        "controls": [
+          {
+            "id": "control-7.1",
+            "class": "Applications",
+            "title": "Establish and Maintain a Vulnerability Management Process",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Establish and maintain a documented vulnerability management process for enterprise assets. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard."
+              }
+            ]
+          },
+          {
+            "id": "control-7.2",
+            "class": "Applications",
+            "title": "Establish and Maintain a Remediation Process",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Establish and maintain a risk-based remediation strategy documented in a remediation process, with monthly, or more frequent, reviews."
+              }
+            ]
+          },
+          {
+            "id": "control-7.3",
+            "class": "Applications",
+            "title": "Perform Automated Operating System Patch Management",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Perform operating system updates on enterprise assets through automated patch management on a monthly, or more frequent, basis."
+              }
+            ]
+          },
+          {
+            "id": "control-7.4",
+            "class": "Applications",
+            "title": "Perform Automated Application Patch Management",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Perform application updates on enterprise assets through automated patch management on a monthly, or more frequent, basis."
+              }
+            ]
+          },
+          {
+            "id": "control-7.5",
+            "class": "Applications",
+            "title": "Perform Automated Vulnerability Scans of Internal Enterprise Assets",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Perform automated vulnerability scans of internal enterprise assets on a quarterly, or more frequent, basis. Conduct both authenticated and unauthenticated scans, using a SCAP-compliant vulnerability scanning tool."
+              }
+            ]
+          },
+          {
+            "id": "control-7.6",
+            "class": "Applications",
+            "title": "Perform Automated Vulnerability Scans of Externally-Exposed Enterprise Assets",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Perform automated vulnerability scans of externally-exposed enterprise assets using a SCAP-compliant vulnerability scanning tool. Perform scans on a monthly, or more frequent, basis. "
+              }
+            ]
+          },
+          {
+            "id": "control-7.7",
+            "class": "Applications",
+            "title": "Remediate Detected Vulnerabilities",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Remediate detected vulnerabilities in software through processes and tooling on a monthly, or more frequent, basis, based on the remediation process."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "control-8",
+        "title": "Audit Log Management",
+        "parts": [
+          {
+            "name": "Description",
+            "prose": "Improve protections and detections of threats from email and web vectors, as these are opportunities for attackers to manipulate human behavior through direct engagement."
+          }
+        ],
+        "controls": [
+          {
+            "id": "control-8.1",
+            "class": "Network",
+            "title": "Establish and Maintain an Audit Log Management Process",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Establish and maintain an audit log management process that defines the enterprise’s logging requirements. At a minimum, address the collection, review, and retention of audit logs for enterprise assets. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard."
+              }
+            ]
+          },
+          {
+            "id": "control-8.2",
+            "class": "Network",
+            "title": "Collect Audit Logs",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Collect audit logs. Ensure that logging, per the enterprise’s audit log management process, has been enabled across enterprise assets."
+              }
+            ]
+          },
+          {
+            "id": "control-8.3",
+            "class": "Network",
+            "title": "Ensure Adequate Audit Log Storage",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Ensure that logging destinations maintain adequate storage to comply with the enterprise’s audit log management process."
+              }
+            ]
+          },
+          {
+            "id": "control-8.4",
+            "class": "Network",
+            "title": "Standardize Time Synchronization",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Standardize time synchronization. Configure at least two synchronized time sources across enterprise assets, where supported."
+              }
+            ]
+          },
+          {
+            "id": "control-8.5",
+            "class": "Network",
+            "title": "Collect Detailed Audit Logs",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Configure detailed audit logging for enterprise assets containing sensitive data. Include event source, date, username, timestamp, source addresses, destination addresses, and other useful elements that could assist in a forensic investigation."
+              }
+            ]
+          },
+          {
+            "id": "control-8.6",
+            "class": "Network",
+            "title": "Collect DNS Query Audit Logs",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Collect DNS query audit logs on enterprise assets, where appropriate and supported."
+              }
+            ]
+          },
+          {
+            "id": "control-8.7",
+            "class": "Network",
+            "title": "Collect URL Request Audit Logs",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Collect URL request audit logs on enterprise assets, where appropriate and supported."
+              }
+            ]
+          },
+          {
+            "id": "control-8.8",
+            "class": "Devices",
+            "title": "Collect Command-Line Audit Logs",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Collect command-line audit logs. Example implementations include collecting audit logs from PowerShell®, BASH™, and remote administrative terminals."
+              }
+            ]
+          },
+          {
+            "id": "control-8.9",
+            "class": "Network",
+            "title": "Centralize Audit Logs",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Centralize, to the extent possible, audit log collection and retention across enterprise assets."
+              }
+            ]
+          },
+          {
+            "id": "control-8.1",
+            "class": "Network",
+            "title": "Retain Audit Logs",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Retain audit logs across enterprise assets for a minimum of 90 days."
+              }
+            ]
+          },
+          {
+            "id": "control-8.11",
+            "class": "Network",
+            "title": "Conduct Audit Log Reviews",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Conduct reviews of audit logs to detect anomalies or abnormal events that could indicate a potential threat. Conduct reviews on a weekly, or more frequent, basis."
+              }
+            ]
+          },
+          {
+            "id": "control-8.12",
+            "class": "Data",
+            "title": "Collect Service Provider Logs",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Collect service provider logs, where supported. Example implementations include collecting authentication and authorization events, data creation and disposal events, and user management events."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "control-9",
+        "title": "Email and Web Browser Protections",
+        "parts": [
+          {
+            "name": "Description",
+            "prose": "Prevent or control the installation, spread, and execution of malicious applications, code, or scripts on enterprise assets."
+          }
+        ],
+        "controls": [
+          {
+            "id": "control-9.1",
+            "class": "Applications",
+            "title": "Ensure Use of Only Fully Supported Browsers and Email Clients",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Ensure only fully supported browsers and email clients are allowed to execute in the enterprise, only using the latest version of browsers and email clients provided through the vendor."
+              }
+            ]
+          },
+          {
+            "id": "control-9.2",
+            "class": "Network",
+            "title": "Use DNS Filtering Services",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Use DNS filtering services on all enterprise assets to block access to known malicious domains."
+              }
+            ]
+          },
+          {
+            "id": "control-9.3",
+            "class": "Network",
+            "title": "Maintain and Enforce Network-Based URL Filters",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Enforce and update network-based URL filters to limit an enterprise asset from connecting to potentially malicious or unapproved websites. Example implementations include category-based filtering, reputation-based filtering, or through the use of block lists. Enforce filters for all enterprise assets."
+              }
+            ]
+          },
+          {
+            "id": "control-9.4",
+            "class": "Applications",
+            "title": "Restrict Unnecessary or Unauthorized Browser and Email Client Extensions",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Restrict, either through uninstalling or disabling, any unauthorized or unnecessary browser or email client plugins, extensions, and add-on applications."
+              }
+            ]
+          },
+          {
+            "id": "control-9.5",
+            "class": "Network",
+            "title": "Implement DMARC",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "To lower the chance of spoofed or modified emails from valid domains, implement DMARC policy and verification, starting with implementing the Sender Policy Framework (SPF) and the DomainKeys Identified Mail (DKIM) standards."
+              }
+            ]
+          },
+          {
+            "id": "control-9.6",
+            "class": "Network",
+            "title": "Block Unnecessary File Types",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Block unnecessary file types attempting to enter the enterprise’s email gateway."
+              }
+            ]
+          },
+          {
+            "id": "control-9.7",
+            "class": "Network",
+            "title": "Deploy and Maintain Email Server Anti-Malware Protections",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Deploy and maintain email server anti-malware protections, such as attachment scanning and/or sandboxing."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "control-10",
+        "title": "Malware Defenses",
+        "parts": [
+          {
+            "name": "Description",
+            "prose": "Establish and maintain data recovery practices sufficient to restore in-scope enterprise assets to a pre-incident and trusted state."
+          }
+        ],
+        "controls": [
+          {
+            "id": "control-10.1",
+            "class": "Devices",
+            "title": "Deploy and Maintain Anti-Malware Software",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Deploy and maintain anti-malware software on all enterprise assets."
+              }
+            ]
+          },
+          {
+            "id": "control-10.2",
+            "class": "Devices",
+            "title": "Configure Automatic Anti-Malware Signature Updates",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Configure automatic updates for anti-malware signature files on all enterprise assets."
+              }
+            ]
+          },
+          {
+            "id": "control-10.3",
+            "class": "Devices",
+            "title": "Disable Autorun and Autoplay for Removable Media",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Disable autorun and autoplay auto-execute functionality for removable media."
+              }
+            ]
+          },
+          {
+            "id": "control-10.4",
+            "class": "Devices",
+            "title": "Configure Automatic Anti-Malware Scanning of Removable Media",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Configure anti-malware software to automatically scan removable media."
+              }
+            ]
+          },
+          {
+            "id": "control-10.5",
+            "class": "Devices",
+            "title": "Enable Anti-Exploitation Features",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Enable anti-exploitation features on enterprise assets and software, where possible, such as Microsoft® Data Execution Prevention (DEP), Windows® Defender Exploit Guard (WDEG), or Apple® System Integrity Protection (SIP) and Gatekeeper™."
+              }
+            ]
+          },
+          {
+            "id": "control-10.6",
+            "class": "Devices",
+            "title": "Centrally Manage Anti-Malware Software",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Centrally manage anti-malware software."
+              }
+            ]
+          },
+          {
+            "id": "control-10.7",
+            "class": "Devices",
+            "title": "Use Behavior-Based Anti-Malware Software",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Use behavior-based anti-malware software."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "control-11",
+        "title": "Data Recovery",
+        "parts": [
+          {
+            "name": "Description",
+            "prose": "Establish, implement, and actively manage (track, report, correct) network devices, in order to prevent attackers from exploiting vulnerable network services and access points."
+          }
+        ],
+        "controls": [
+          {
+            "id": "control-11.1",
+            "class": "Data",
+            "title": "Establish and Maintain a Data Recovery Process ",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Establish and maintain a data recovery process. In the process, address the scope of data recovery activities, recovery prioritization, and the security of backup data. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard. "
+              }
+            ]
+          },
+          {
+            "id": "control-11.2",
+            "class": "Data",
+            "title": "Perform Automated Backups ",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Perform automated backups of in-scope enterprise assets. Run backups weekly, or more frequently, based on the sensitivity of the data."
+              }
+            ]
+          },
+          {
+            "id": "control-11.3",
+            "class": "Data",
+            "title": "Protect Recovery Data",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Protect recovery data with equivalent controls to the original data. Reference encryption or data separation, based on requirements."
+              }
+            ]
+          },
+          {
+            "id": "control-11.4",
+            "class": "Data",
+            "title": "Establish and Maintain an Isolated Instance of Recovery Data ",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Establish and maintain an isolated instance of recovery data. Example implementations include, version controlling backup destinations through offline, cloud, or off-site systems or services."
+              }
+            ]
+          },
+          {
+            "id": "control-11.5",
+            "class": "Data",
+            "title": "Test Data Recovery",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Test backup recovery quarterly, or more frequently, for a sampling of in-scope enterprise assets."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "control-12",
+        "title": "Network Infrastructure Management",
+        "parts": [
+          {
+            "name": "Description",
+            "prose": "Operate processes and tooling to establish and maintain comprehensive network monitoring and defense against security threats across the enterprise’s network infrastructure and user base."
+          }
+        ],
+        "controls": [
+          {
+            "id": "control-12.1",
+            "class": "Network",
+            "title": "Ensure Network Infrastructure is Up-to-Date",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Ensure network infrastructure is kept up-to-date. Example implementations include running the latest stable release of software and/or using currently supported network-as-a-service (NaaS) offerings. Review software versions monthly, or more frequently, to verify software support."
+              }
+            ]
+          },
+          {
+            "id": "control-12.2",
+            "class": "Network",
+            "title": "Establish and Maintain a Secure Network Architecture",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Establish and maintain a secure network architecture. A secure network architecture must address segmentation, least privilege, and availability, at a minimum."
+              }
+            ]
+          },
+          {
+            "id": "control-12.3",
+            "class": "Network",
+            "title": "Securely Manage Network Infrastructure",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Securely manage network infrastructure. Example implementations include version-controlled-infrastructure-as-code, and the use of secure network protocols, such as SSH and HTTPS. "
+              }
+            ]
+          },
+          {
+            "id": "control-12.4",
+            "class": "Network",
+            "title": "Establish and Maintain Architecture Diagram(s)",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Establish and maintain architecture diagram(s) and/or other network system documentation. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard."
+              }
+            ]
+          },
+          {
+            "id": "control-12.5",
+            "class": "Network",
+            "title": "Centralize Network Authentication, Authorization, and Auditing (AAA)",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Centralize network AAA."
+              }
+            ]
+          },
+          {
+            "id": "control-12.6",
+            "class": "Network",
+            "title": "Use of Secure Network Management and Communication Protocols ",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Use secure network management and communication protocols (e.g., 802.1X, Wi-Fi Protected Access 2 (WPA2) Enterprise or greater)."
+              }
+            ]
+          },
+          {
+            "id": "control-12.7",
+            "class": "Devices",
+            "title": "Ensure Remote Devices Utilize a VPN and are Connecting to an Enterprise’s AAA Infrastructure",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Require users to authenticate to enterprise-managed VPN and authentication services prior to accessing enterprise resources on end-user devices."
+              }
+            ]
+          },
+          {
+            "id": "control-12.8",
+            "class": "Devices",
+            "title": "Establish and Maintain Dedicated Computing Resources for All Administrative Work",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Establish and maintain dedicated computing resources, either physically or logically separated, for all administrative tasks or tasks requiring administrative access. The computing resources should be segmented from the enterprise's primary network and not be allowed internet access."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "control-13",
+        "title": "Network Monitoring and Defense",
+        "parts": [
+          {
+            "name": "Description",
+            "prose": "Establish and maintain a security awareness program to influence behavior among the workforce to be security conscious and properly skilled to reduce cybersecurity risks to the enterprise."
+          }
+        ],
+        "controls": [
+          {
+            "id": "control-13.1",
+            "class": "Network",
+            "title": "Centralize Security Event Alerting",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Centralize security event alerting across enterprise assets for log correlation and analysis. Best practice implementation requires the use of a SIEM, which includes vendor-defined event correlation alerts. A log analytics platform configured with security-relevant correlation alerts also satisfies this Safeguard."
+              }
+            ]
+          },
+          {
+            "id": "control-13.2",
+            "class": "Devices",
+            "title": "Deploy a Host-Based Intrusion Detection Solution",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Deploy a host-based intrusion detection solution on enterprise assets, where appropriate and/or supported."
+              }
+            ]
+          },
+          {
+            "id": "control-13.3",
+            "class": "Network",
+            "title": "Deploy a Network Intrusion Detection Solution",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Deploy a network intrusion detection solution on enterprise assets, where appropriate. Example implementations include the use of a Network Intrusion Detection System (NIDS) or equivalent cloud service provider (CSP) service."
+              }
+            ]
+          },
+          {
+            "id": "control-13.4",
+            "class": "Network",
+            "title": "Perform Traffic Filtering Between Network Segments",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Perform traffic filtering between network segments, where appropriate."
+              }
+            ]
+          },
+          {
+            "id": "control-13.5",
+            "class": "Devices",
+            "title": "Manage Access Control for Remote Assets",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Manage access control for assets remotely connecting to enterprise resources. Determine amount of access to enterprise resources based on: up-to-date anti-malware software installed, configuration compliance with the enterprise’s secure configuration process, and ensuring the operating system and applications are up-to-date.\t "
+              }
+            ]
+          },
+          {
+            "id": "control-13.6",
+            "class": "Network",
+            "title": "Collect Network Traffic Flow Logs ",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Collect network traffic flow logs and/or network traffic to review and alert upon from network devices."
+              }
+            ]
+          },
+          {
+            "id": "control-13.7",
+            "class": "Devices",
+            "title": "Deploy a Host-Based Intrusion Prevention Solution",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": " Deploy a host-based intrusion prevention solution on enterprise assets, where appropriate and/or supported. Example implementations include use of an Endpoint Detection and Response (EDR) client or host-based IPS agent."
+              }
+            ]
+          },
+          {
+            "id": "control-13.8",
+            "class": "Network",
+            "title": "Deploy a Network Intrusion Prevention Solution",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Deploy a network intrusion prevention solution, where appropriate. Example implementations include the use of a Network Intrusion Prevention System (NIPS) or equivalent CSP service."
+              }
+            ]
+          },
+          {
+            "id": "control-13.9",
+            "class": "Devices",
+            "title": "Deploy Port-Level Access Control",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Deploy port-level access control. Port-level access control utilizes 802.1x, or similar network access control protocols, such as certificates, and may incorporate user and/or device authentication."
+              }
+            ]
+          },
+          {
+            "id": "control-13.1",
+            "class": "Network",
+            "title": "Perform Application Layer Filtering",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Perform application layer filtering. Example implementations include a filtering proxy, application layer firewall, or gateway."
+              }
+            ]
+          },
+          {
+            "id": "control-13.11",
+            "class": "Network",
+            "title": "Tune Security Event Alerting Thresholds",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Tune security event alerting thresholds monthly, or more frequently."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "control-14",
+        "title": "Security Awareness and Skills Training",
+        "parts": [
+          {
+            "name": "Description",
+            "prose": "Develop a process to evaluate service providers who hold sensitive data, or are responsible for an enterprise’s critical IT platforms or processes, to ensure these providers are protecting those platforms and data appropriately."
+          }
+        ],
+        "controls": [
+          {
+            "id": "control-14.1",
+            "class": "nan",
+            "title": "Establish and Maintain a Security Awareness Program",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Establish and maintain a security awareness program. The purpose of a security awareness program is to educate the enterprise’s workforce on how to interact with enterprise assets and data in a secure manner. Conduct training at hire and, at a minimum, annually. Review and update content annually, or when significant enterprise changes occur that could impact this Safeguard."
+              }
+            ]
+          },
+          {
+            "id": "control-14.2",
+            "class": "nan",
+            "title": "Train Workforce Members to Recognize Social Engineering Attacks",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Train workforce members to recognize social engineering attacks, such as phishing, pre-texting, and tailgating. "
+              }
+            ]
+          },
+          {
+            "id": "control-14.3",
+            "class": "nan",
+            "title": "Train Workforce Members on Authentication Best Practices",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Train workforce members on authentication best practices. Example topics include MFA, password composition, and credential management."
+              }
+            ]
+          },
+          {
+            "id": "control-14.4",
+            "class": "nan",
+            "title": "Train Workforce on Data Handling Best Practices",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Train workforce members on how to identify and properly store, transfer, archive, and destroy sensitive data. This also includes training workforce members on clear screen and desk best practices, such as locking their screen when they step away from their enterprise asset, erasing physical and virtual whiteboards at the end of meetings, and storing data and assets securely."
+              }
+            ]
+          },
+          {
+            "id": "control-14.5",
+            "class": "nan",
+            "title": "Train Workforce Members on Causes of Unintentional Data Exposure",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Train workforce members to be aware of causes for unintentional data exposure. Example topics include mis-delivery of sensitive data, losing a portable end-user device, or publishing data to unintended audiences."
+              }
+            ]
+          },
+          {
+            "id": "control-14.6",
+            "class": "nan",
+            "title": "Train Workforce Members on Recognizing and Reporting Security Incidents",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Train workforce members to be able to recognize a potential incident and be able to report such an incident. "
+              }
+            ]
+          },
+          {
+            "id": "control-14.7",
+            "class": "nan",
+            "title": "Train Workforce on How to Identify and Report if Their Enterprise Assets are Missing Security Updates",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Train workforce to understand how to verify and report out-of-date software patches or any failures in automated processes and tools. Part of this training should include notifying IT personnel of any failures in automated processes and tools."
+              }
+            ]
+          },
+          {
+            "id": "control-14.8",
+            "class": "nan",
+            "title": "Train Workforce on the Dangers of Connecting to and Transmitting Enterprise Data Over Insecure Networks",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Train workforce members on the dangers of connecting to, and transmitting data over, insecure networks for enterprise activities. If the enterprise has remote workers, training must include guidance to ensure that all users securely configure their home network infrastructure."
+              }
+            ]
+          },
+          {
+            "id": "control-14.9",
+            "class": "nan",
+            "title": "Conduct Role-Specific Security Awareness and Skills Training",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Conduct role-specific security awareness and skills training. Example implementations include secure system administration courses for IT professionals, OWASP® Top 10 vulnerability awareness and prevention training for web application developers, and advanced social engineering awareness training for high-profile roles."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "control-15",
+        "title": "Service Provider Management",
+        "parts": [
+          {
+            "name": "Description",
+            "prose": "Manage the security life cycle of in-house developed, hosted, or acquired software to prevent, detect, and remediate security weaknesses before they can impact the enterprise."
+          }
+        ],
+        "controls": [
+          {
+            "id": "control-15.1",
+            "class": "nan",
+            "title": "Establish and Maintain an Inventory of Service Providers",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Establish and maintain an inventory of service providers. The inventory is to list all known service providers, include classification(s), and designate an enterprise contact for each service provider. Review and update the inventory annually, or when significant enterprise changes occur that could impact this Safeguard. "
+              }
+            ]
+          },
+          {
+            "id": "control-15.2",
+            "class": "nan",
+            "title": "Establish and Maintain a Service Provider Management Policy",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Establish and maintain a service provider management policy. Ensure the policy addresses the classification, inventory, assessment, monitoring, and decommissioning of service providers. Review and update the policy annually, or when significant enterprise changes occur that could impact this Safeguard."
+              }
+            ]
+          },
+          {
+            "id": "control-15.3",
+            "class": "nan",
+            "title": "Classify Service Providers",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Classify service providers. Classification consideration may include one or more characteristics, such as data sensitivity, data volume, availability requirements, applicable regulations, inherent risk, and mitigated risk. Update and review classifications annually, or when significant enterprise changes occur that could impact this Safeguard."
+              }
+            ]
+          },
+          {
+            "id": "control-15.4",
+            "class": "nan",
+            "title": "Ensure Service Provider Contracts Include Security Requirements",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Ensure service provider contracts include security requirements. Example requirements may include minimum security program requirements, security incident and/or data breach notification and response, data encryption requirements, and data disposal commitments. These security requirements must be consistent with the enterprise’s service provider management policy. Review service provider contracts annually to ensure contracts are not missing security requirements."
+              }
+            ]
+          },
+          {
+            "id": "control-15.5",
+            "class": "nan",
+            "title": "Assess Service Providers",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Assess service providers consistent with the enterprise’s service provider management policy. Assessment scope may vary based on classification(s), and may include review of standardized assessment reports, such as Service Organization Control 2 (SOC 2) and Payment Card Industry (PCI) Attestation of Compliance (AoC), customized questionnaires, or other appropriately rigorous processes. Reassess service providers annually, at a minimum, or with new and renewed contracts."
+              }
+            ]
+          },
+          {
+            "id": "control-15.6",
+            "class": "Data",
+            "title": "Monitor Service Providers",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Monitor service providers consistent with the enterprise’s service provider management policy. Monitoring may include periodic reassessment of service provider compliance, monitoring service provider release notes, and dark web monitoring."
+              }
+            ]
+          },
+          {
+            "id": "control-15.7",
+            "class": "Data",
+            "title": "Securely Decommission Service Providers",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Securely decommission service providers. Example considerations include user and service account deactivation, termination of data flows, and secure disposal of enterprise data within service provider systems. "
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "control-16",
+        "title": "Application Software Security",
+        "parts": [
+          {
+            "name": "Description",
+            "prose": "Establish a program to develop and maintain an incident response capability (e.g., policies, plans, procedures, defined roles, training, and communications) to prepare, detect, and quickly respond to an attack."
+          }
+        ],
+        "controls": [
+          {
+            "id": "control-16.1",
+            "class": "Applications",
+            "title": "Establish and Maintain a Secure Application Development Process",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Establish and maintain a secure application development process. In the process, address such items as: secure application design standards, secure coding practices, developer training, vulnerability management, security of third-party code, and application security testing procedures. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard."
+              }
+            ]
+          },
+          {
+            "id": "control-16.2",
+            "class": "Applications",
+            "title": "Establish and Maintain a Process to Accept and Address Software Vulnerabilities",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Establish and maintain a process to accept and address reports of software vulnerabilities, including providing a means for external entities to report. The process is to include such items as: a vulnerability handling policy that identifies reporting process, responsible party for handling vulnerability reports, and a process for intake, assignment, remediation, and remediation testing. As part of the process, use a vulnerability tracking system that includes severity ratings, and metrics for measuring timing for identification, analysis, and remediation of vulnerabilities. Review and update documentation annually, or when significant enterprise changes occur that could impact this Safeguard.\n\nThird-party application developers need to consider this an externally-facing policy that helps to set expectations for outside stakeholders. "
+              }
+            ]
+          },
+          {
+            "id": "control-16.3",
+            "class": "Applications",
+            "title": "Perform Root Cause Analysis on Security Vulnerabilities",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Perform root cause analysis on security vulnerabilities. When reviewing vulnerabilities, root cause analysis is the task of evaluating underlying issues that create vulnerabilities in code, and allows development teams to move beyond just fixing individual vulnerabilities as they arise."
+              }
+            ]
+          },
+          {
+            "id": "control-16.4",
+            "class": "Applications",
+            "title": "Establish and Manage an Inventory of Third-Party Software Components",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Establish and manage an updated inventory of third-party components used in development, often referred to as a “bill of materials,” as well as components slated for future use. This inventory is to include any risks that each third-party component could pose. Evaluate the list at least monthly to identify any changes or updates to these components, and validate that the component is still supported. "
+              }
+            ]
+          },
+          {
+            "id": "control-16.5",
+            "class": "Applications",
+            "title": "Use Up-to-Date and Trusted Third-Party Software Components",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Use up-to-date and trusted third-party software components. When possible, choose established and proven frameworks and libraries that provide adequate security. Acquire these components from trusted sources or evaluate the software for vulnerabilities before use."
+              }
+            ]
+          },
+          {
+            "id": "control-16.6",
+            "class": "Applications",
+            "title": "Establish and Maintain a Severity Rating System and Process for Application Vulnerabilities",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Establish and maintain a severity rating system and process for application vulnerabilities that facilitates prioritizing the order in which discovered vulnerabilities are fixed. This process includes setting a minimum level of security acceptability for releasing code or applications. Severity ratings bring a systematic way of triaging vulnerabilities that improves risk management and helps ensure the most severe bugs are fixed first. Review and update the system and process annually."
+              }
+            ]
+          },
+          {
+            "id": "control-16.7",
+            "class": "Applications",
+            "title": "Use Standard Hardening Configuration Templates for Application Infrastructure",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Use standard, industry-recommended hardening configuration templates for application infrastructure components. This includes underlying servers, databases, and web servers, and applies to cloud containers, Platform as a Service (PaaS) components, and SaaS components. Do not allow in-house developed software to weaken configuration hardening."
+              }
+            ]
+          },
+          {
+            "id": "control-16.8",
+            "class": "Applications",
+            "title": "Separate Production and Non-Production Systems",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Maintain separate environments for production and non-production systems."
+              }
+            ]
+          },
+          {
+            "id": "control-16.9",
+            "class": "Applications",
+            "title": "Train Developers in Application Security Concepts and Secure Coding",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Ensure that all software development personnel receive training in writing secure code for their specific development environment and responsibilities. Training can include general security principles and application security standard practices. Conduct training at least annually and design in a way to promote security within the development team, and build a culture of security among the developers."
+              }
+            ]
+          },
+          {
+            "id": "control-16.1",
+            "class": "Applications",
+            "title": "Apply Secure Design Principles in Application Architectures",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Apply secure design principles in application architectures. Secure design principles include the concept of least privilege and enforcing mediation to validate every operation that the user makes, promoting the concept of \"never trust user input.\" Examples include ensuring that explicit error checking is performed and documented for all input, including for size, data type, and acceptable ranges or formats. Secure design also means minimizing the application infrastructure attack surface, such as turning off unprotected ports and services, removing unnecessary programs and files, and renaming or removing default accounts."
+              }
+            ]
+          },
+          {
+            "id": "control-16.11",
+            "class": "Applications",
+            "title": "Leverage Vetted Modules or Services for Application Security Components",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Leverage vetted modules or services for application security components, such as identity management, encryption, and auditing and logging. Using platform features in critical security functions will reduce developers’ workload and minimize the likelihood of design or implementation errors. Modern operating systems provide effective mechanisms for identification, authentication, and authorization and make those mechanisms available to applications. Use only standardized, currently accepted, and extensively reviewed encryption algorithms. Operating systems also provide mechanisms to create and maintain secure audit logs."
+              }
+            ]
+          },
+          {
+            "id": "control-16.12",
+            "class": "Applications",
+            "title": "Implement Code-Level Security Checks",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Apply static and dynamic analysis tools within the application life cycle to verify that secure coding practices are being followed."
+              }
+            ]
+          },
+          {
+            "id": "control-16.13",
+            "class": "Applications",
+            "title": "Conduct Application Penetration Testing",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Conduct application penetration testing. For critical applications, authenticated penetration testing is better suited to finding business logic vulnerabilities than code scanning and automated security testing. Penetration testing relies on the skill of the tester to manually manipulate an application as an authenticated and unauthenticated user. "
+              }
+            ]
+          },
+          {
+            "id": "control-16.14",
+            "class": "Applications",
+            "title": "Conduct Threat Modeling",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Conduct threat modeling. Threat modeling is the process of identifying and addressing application security design flaws within a design, before code is created. It is conducted through specially trained individuals who evaluate the application design and gauge security risks for each entry point and access level. The goal is to map out the application, architecture, and infrastructure in a structured way to understand its weaknesses."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "control-17",
+        "title": "Incident Response Management",
+        "parts": [
+          {
+            "name": "Description",
+            "prose": "Test the effectiveness and resiliency of enterprise assets through identifying and exploiting weaknesses in controls (people, processes, and technology), and simulating the objectives and actions of an attacker."
+          }
+        ],
+        "controls": [
+          {
+            "id": "control-17.1",
+            "class": "nan",
+            "title": "Designate Personnel to Manage Incident Handling",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Designate one key person, and at least one backup, who will manage the enterprise’s incident handling process. Management personnel are responsible for the coordination and documentation of incident response and recovery efforts and can consist of employees internal to the enterprise, third-party vendors, or a hybrid approach. If using a third-party vendor, designate at least one person internal to the enterprise to oversee any third-party work. Review annually, or when significant enterprise changes occur that could impact this Safeguard."
+              }
+            ]
+          },
+          {
+            "id": "control-17.2",
+            "class": "nan",
+            "title": "Establish and Maintain Contact Information for Reporting Security Incidents",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Establish and maintain contact information for parties that need to be informed of security incidents. Contacts may include internal staff, third-party vendors, law enforcement, cyber insurance providers, relevant government agencies, Information Sharing and Analysis Center (ISAC) partners, or other stakeholders. Verify contacts annually to ensure that information is up-to-date."
+              }
+            ]
+          },
+          {
+            "id": "control-17.3",
+            "class": "nan",
+            "title": "Establish and Maintain an Enterprise Process for Reporting Incidents",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Establish and maintain an enterprise process for the workforce to report security incidents. The process includes reporting timeframe, personnel to report to, mechanism for reporting, and the minimum information to be reported. Ensure the process is publicly available to all of the workforce. Review annually, or when significant enterprise changes occur that could impact this Safeguard."
+              }
+            ]
+          },
+          {
+            "id": "control-17.4",
+            "class": "nan",
+            "title": "Establish and Maintain an Incident Response Process",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Establish and maintain an incident response process that addresses roles and responsibilities, compliance requirements, and a communication plan. Review annually, or when significant enterprise changes occur that could impact this Safeguard."
+              }
+            ]
+          },
+          {
+            "id": "control-17.5",
+            "class": "nan",
+            "title": "Assign Key Roles and Responsibilities",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Assign key roles and responsibilities for incident response, including staff from legal, IT, information security, facilities, public relations, human resources, incident responders, and analysts, as applicable. Review annually, or when significant enterprise changes occur that could impact this Safeguard."
+              }
+            ]
+          },
+          {
+            "id": "control-17.6",
+            "class": "nan",
+            "title": "Define Mechanisms for Communicating During Incident Response",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Determine which primary and secondary mechanisms will be used to communicate and report during a security incident. Mechanisms can include phone calls, emails, or letters. Keep in mind that certain mechanisms, such as emails, can be affected during a security incident. Review annually, or when significant enterprise changes occur that could impact this Safeguard."
+              }
+            ]
+          },
+          {
+            "id": "control-17.7",
+            "class": "nan",
+            "title": "Conduct Routine Incident Response Exercises",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Plan and conduct routine incident response exercises and scenarios for key personnel involved in the incident response process to prepare for responding to real-world incidents. Exercises need to test communication channels, decision making, and workflows. Conduct testing on an annual basis, at a minimum."
+              }
+            ]
+          },
+          {
+            "id": "control-17.8",
+            "class": "nan",
+            "title": "Conduct Post-Incident Reviews",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Conduct post-incident reviews. Post-incident reviews help prevent incident recurrence through identifying lessons learned and follow-up action."
+              }
+            ]
+          },
+          {
+            "id": "control-17.9",
+            "class": "nan",
+            "title": "Establish and Maintain Security Incident Thresholds",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Establish and maintain security incident thresholds, including, at a minimum, differentiating between an incident and an event. Examples can include: abnormal activity, security vulnerability, security weakness, data breach, privacy incident, etc. Review annually, or when significant enterprise changes occur that could impact this Safeguard."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "control-18",
+        "title": "Penetration Testing",
+        "parts": [
+          {
+            "name": "Description",
+            "prose": ""
+          }
+        ],
+        "controls": [
+          {
+            "id": "control-18.1",
+            "class": "nan",
+            "title": "Establish and Maintain a Penetration Testing Program",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Establish and maintain a penetration testing program appropriate to the size, complexity, and maturity of the enterprise. Penetration testing program characteristics include scope, such as network, web application, Application Programming Interface (API), hosted services, and physical premise controls; frequency; limitations, such as acceptable hours, and excluded attack types; point of contact information; remediation, such as how findings will be routed internally; and retrospective requirements."
+              }
+            ]
+          },
+          {
+            "id": "control-18.2",
+            "class": "Network",
+            "title": "Perform Periodic External Penetration Tests",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Perform periodic external penetration tests based on program requirements, no less than annually. External penetration testing must include enterprise and environmental reconnaissance to detect exploitable information. Penetration testing requires specialized skills and experience and must be conducted through a qualified party. The testing may be clear box or opaque box."
+              }
+            ]
+          },
+          {
+            "id": "control-18.3",
+            "class": "Network",
+            "title": "Remediate Penetration Test Findings",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Remediate penetration test findings based on the enterprise’s policy for remediation scope and prioritization."
+              }
+            ]
+          },
+          {
+            "id": "control-18.4",
+            "class": "Network",
+            "title": "Validate Security Measures",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Validate security measures after each penetration test. If deemed necessary, modify rulesets and capabilities to detect the techniques used during testing."
+              }
+            ]
+          },
+          {
+            "id": "control-18.5",
+            "class": "nan",
+            "title": "Perform Periodic Internal Penetration Tests",
+            "parts": [
+              {
+                "name": "Description",
+                "prose": "Perform periodic internal penetration tests based on program requirements, no less than annually. The testing may be clear box or opaque box."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
